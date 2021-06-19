@@ -18,7 +18,7 @@ pytz==2021.1
 regex==2021.4.4
 requests==2.25.1
 sacremoses==0.0.45
-sentencepiece==0.1.91
+# sentencepiece==0.1.91
 six==1.16.0
 sqlparse==0.4.1
 tokenizers==0.10.3
