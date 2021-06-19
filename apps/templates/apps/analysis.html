@@ -1,0 +1,22 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Product Review Analysis</h2>
+<div class="container">
+    <br>
+    <span><i>This a bert-based model fine-tuned for sentiment analysis on product reviews in six languages: English, Dutch, German, French, Spanish and Italian. It predicts the sentiment of the review as a number of stars (between 1 and 5).</i></span>
+    <div class="form-group mt-3">
+        <span><b>Review: </b></span><textarea class="form-control jTextarea" id="jTextarea'" rows="3">{{ review }}</textarea>
+        <br>
+        <span><b>Analysis result: </b></span>
+        <fieldset class="starability-result mx-auto" data-rating="{{ star }}">
+            Rated: {{ star }} stars
+        </fieldset>
+    </div>
+</div>
+
+<script>
+    $("#005").addClass("active");
+</script>
+{% endblock %}

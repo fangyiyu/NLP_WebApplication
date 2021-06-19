@@ -1,0 +1,17 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Text Summarization</h2>
+<div class="container">
+    <div class="form-group">
+        Context: <textarea class="form-control jTextarea" id="jTextarea'" rows="3">{{ abstract }}</textarea>
+        <br>
+        Abstract: <textarea class="form-control jTextarea" id="jTextarea'" rows="1">{{ conclude }}</textarea>
+    </div>
+</div>
+
+<script>
+    $("#003").addClass("active");
+</script>
+{% endblock %}

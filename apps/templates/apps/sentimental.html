@@ -1,0 +1,23 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Product Review Analysis</h2>
+<div class="container">
+    <br>
+    <span>This a bert-based model fine-tuned for sentiment analysis on product reviews in six languages: English, Dutch,
+        German, French, Spanish and Italian. It predicts the sentiment of the review as a number of stars (between 1 and
+        5).</span>
+    <form action="{% url 'apps:sentimental2' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group mt-3">
+            <textarea class="form-control jTextarea" id="jTextarea'" rows="5" name="review"
+                placeholder="Write your review here..." required></textarea>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form>
+</div>
+<script>
+    $("#005").addClass("active");
+</script>
+{% endblock %}
