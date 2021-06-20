@@ -35,7 +35,7 @@ def classification(text):
   return result
 
 def translation(text):
-  model = pipeline("translation", model="Helsinki-NLP/opus-mt-en-fr")
+  model = pipeline("translation_en_to_fr", model="t5-small")
   result = model(text)
   return result
 
