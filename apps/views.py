@@ -74,9 +74,11 @@ def sentimental2(request):
     if request.method == "POST":
         review = request.POST.get("review")
         result = predict.classification(review)
-        star = int(result[0]['label'][0])
+        mapping = {"LABEL_0":"Joy", 'LABEL_1': "Optimism", 'LABEL_2': "Anger", 'LABEL3': 'Sadness'}
+        emotion = mapping[result[0]['label']]
+        score = result[0]['score']
         return render(request, 'apps/analysis.html',{
-            "star": star,
+            "emotion": emotion,
             "score": round(result[0]['score'],3),
             "review": review,
         }) 

@@ -9,7 +9,7 @@
     <form action="{% url 'apps:translate2' %}" method="POST">
         {% csrf_token %}
         <div class="form-group mt-3">
-            <textarea class="form-control jTextarea" id="jTextarea'" rows="5" name="text"
+            <textarea  maxlength="215"  class="form-control jTextarea" id="jTextarea'" rows="5" name="text"
                 placeholder="Write your text here..." required></textarea>
         </div>
         <button class="btn btn-warning" type="submit">Submit</button>

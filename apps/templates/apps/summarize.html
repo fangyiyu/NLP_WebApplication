@@ -7,7 +7,7 @@
     <form action="{% url 'apps:summarize2' %}" method="POST">
         {% csrf_token %}
         <div class="form-group">
-            <textarea class="form-control jTextarea" id="jTextarea'" rows="3" name="abstract"
+            <textarea maxlength="512" class="form-control jTextarea" id="jTextarea'" rows="3" name="abstract"
                 placeholder="Write your text here..." required></textarea>
         </div>
         <button class="btn btn-warning" type="submit">Submit</button>
