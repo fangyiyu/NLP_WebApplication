@@ -47,7 +47,7 @@ requests==2.25.1
 requests-oauthlib==1.3.0
 rsa==4.7.2
 sacremoses==0.0.45
-sentencepiece==0.1.91
+# sentencepiece==0.1.91
 six==1.15.0
 sqlparse==0.4.1
 tensorboard==2.5.0
