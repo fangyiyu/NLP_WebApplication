@@ -1,1 +1,0 @@
-web: gunicorn HuggingFace.wsgi
