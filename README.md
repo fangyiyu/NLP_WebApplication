@@ -15,6 +15,48 @@ I usually use [Heroku](https://www.heroku.com/) to host websites, but due to the
 
 The functionality and screenshots of the web pages are shown as follows.
 
+_Homepage_
 <p align="center">
-  <img width="350" src="https://github.com/fangyiyu/Bitcoin_Prediction_Django/blob/master/structure.png">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/1.png">
 </p>
+
+_Text Generation_
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/2.png">
+</p>
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/3.png">
+</p>
+
+_Text Summarization_
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/4.png">
+</p>
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/5.png">
+</p>
+
+_Question Answering_
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/6.png">
+</p>
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/7.png">
+</p>
+
+_Sentimental Analysis_
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/8.png">
+</p>
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/9.png">
+</p>
+
+_Machine Translation_
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/10.png">
+</p>
+<p align="center">
+  <img width="900" src="https://github.com/fangyiyu/NLP_WebApplication/blob/master/images/11.png">
+</p>
+
