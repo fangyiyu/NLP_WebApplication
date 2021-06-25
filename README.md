@@ -5,6 +5,8 @@ The tasks include text generation, sentimental analysis, fill mask, machine tran
 
 I usually use [Heroku](https://www.heroku.com/) to host websites, but due to the enormous size of the dependencies (specifically [TensorFlow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/)), Heroku cannot be used to host this app. [AWS EC2](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) and [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) could work, but I don’t see the necessity to host this website considering the fees associated with running instances. So the application can only run locally for now. However, you can folk the repo and follow the steps to reproduce the web application and host it on AWS or other cloud platforms if you are interested.  
 
+
+## Run the application locally
 - Create a virtual environment by ``` virtualenv <my_env_name>```
 - Activate the env by ```<my_env_name>/bin/activate```
 - Clone my Repo by ``` git clone <the https of the repo>```
