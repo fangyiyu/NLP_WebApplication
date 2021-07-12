@@ -1,0 +1,27 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Question Answering</h2>
+<div class="container">
+    <form action="{% url 'apps:qa' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <textarea class="form-control jTextarea" id="jTextarea'" rows="5" name="context"
+                placeholder="Write your context here..." required></textarea>
+            <br>
+            <textarea class="form-control jTextarea" id="jTextarea'" rows="1" name="question"
+                placeholder="Write your question here..." required>{{ questtion }}</textarea>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+</div>
+</form>
+{% if answer %}
+Answer: <textarea class="form-control jTextarea" id="jTextarea'" rows="1">{{ answer }}</textarea>
+<span><small>with confidence {{ score }}</small></span>
+{% endif %}
+<script>
+    $("#004").addClass("active");
+</script>
+
+{% endblock %}

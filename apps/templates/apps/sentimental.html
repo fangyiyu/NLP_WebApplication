@@ -1,0 +1,27 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Product Review Analysis</h2>
+<div class="container">
+    <br>
+    <span>This is a roBERTa-base model trained on ~58M tweets and finetuned for emotion recognition.
+        <br> The emotions are: Joy&#128516; Optimism&#128512; Sadness&#128532; and Anger&#128545;
+    </span>
+    <form action="{% url 'apps:sentimental' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group mt-3">
+            <textarea class="form-control jTextarea" id="jTextarea'" rows="5" name="review"
+                placeholder="Write your review here..." required>{{ review }}</textarea>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form>
+    {% if emotion %}
+    <span><b>Analysis result: </b></span>
+    <div style="text-align: center;">{{ emotion }}</div>
+    {% endif %}
+</div>
+<script>
+    $("#005").addClass("active");
+</script>
+{% endblock %}

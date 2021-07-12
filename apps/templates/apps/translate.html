@@ -1,0 +1,25 @@
+{% extends "apps/layout.html" %}
+
+{% block body %}
+
+<h2 style="text-align:center; margin-top: 100px;">Machine Translation</h2>
+<div class="container">
+    <br><br>
+    <span>A tool to translate English to French.</span>
+    <form action="{% url 'apps:translate' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group mt-3">
+            <textarea maxlength="215" class="form-control jTextarea" id="jTextarea'" rows="5" name="text"
+                placeholder="Write your text here..." required>{{ text }}</textarea>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form>
+    {% if result %}
+    Translated text in French: <textarea class="form-control jTextarea" id="jTextarea'" rows="3">{{ result }}</textarea>
+    {% endif %}
+
+</div>
+<script>
+    $("#006").addClass("active");
+</script>
+{% endblock %}
