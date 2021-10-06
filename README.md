@@ -7,7 +7,7 @@ I usually use [Heroku](https://www.heroku.com/) to host websites, but due to the
 
 
 ### Run the application locally
-- Create a virtual environment by ``` virtualenv <my_env_name>```
+- Create a virtual environment by ``` python -m venv <my_venv_name>```
 - Activate the env by ```<my_env_name>/bin/activate```
 - Clone my Repo by ``` git clone <the https of the repo>```
 - Get into the directory where manage.py is.
